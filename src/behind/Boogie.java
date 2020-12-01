@@ -1,17 +1,18 @@
 package behind;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
-//public class Boogie extends Wagonn {
-public class Boogie implements Wagon {
+public class Boogie extends Wagonn {
+//public class Boogie implements Wagon {
     int boogieNo;
     String tire;
     int rows;
     int columns;
     byte seatNo = 1;
     byte availableSeats;
-
+    List<List<Seat>> seats=new ArrayList<List<Seat>>();
     Boogie(int boogieNo, String tire, int rows, int columns) {
         this.boogieNo = boogieNo;
         this.tire = tire;

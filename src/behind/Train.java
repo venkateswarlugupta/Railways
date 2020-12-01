@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Train {
-    static List<Wagon> train=new ArrayList<>();
+    //static List<Wagon> train=new ArrayList<>();
+    static List<Wagonn> train=new ArrayList<>();
     //static List<Boogie> train = new ArrayList<>();
 
     public static void main(String[] args) {
     //Train() {
-        Boogie one=new Boogie(18,"2A",10, 3);
-
+        Boogie one=new Boogie(18,"2A",0, 3);
+        System.out.println(one);
+        //one.
+        train.add(one);
         train.add(new FirstClass(1));
         train.add(new SecondClass(2));
         train.add(new SecondClass(3));
@@ -22,7 +25,8 @@ public class Train {
         train.add(new Sleeper(9));
         train.add(new Sleeper(10));
         train.add(new Sleeper(11));
-        //train.get(1);
+        System.out.println(train.get(0));
+        //train.get(0)
         /*Boogie one=new Boogie( 1,"1A",10,2);
         train.add(one);
         train.add(new Boogie( 2,"2A",10,3));
